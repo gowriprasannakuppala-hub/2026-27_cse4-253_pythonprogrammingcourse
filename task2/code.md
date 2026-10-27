@@ -28,7 +28,21 @@ Develop a Python program to calculate household electricity bills for several mo
 
 ## 5. Flowchart
 ```mermaid
-Units <= 100?Energy = Units * 2Units <= 200?Energy = 200 + remainingunits * 3Energy = 500 + remainingunits * 5Apply fixed chargeUnits 200?Add 5% surchargeUnits < 100?Subtract 5% rebateCalculate final billFirst month?Store billCompare with previous billIncrease 30%?Flag unusual increaseMark as normalMore months?EndYesNoYesNoYesNoYesNoYesNoYesNoYesNo
+Start
+Input number of months and units
+Calculate progressive energy charges
+Add fixed charge and apply surcharge or rebate
+Store and display monthly bill
+Compare with previous month's bill
+Is increase greater than 30%?
+Yes
+Flag unusual increase
+
+No
+Normal increase
+
+
+End
 ```
 
 ## 7. Sample input
