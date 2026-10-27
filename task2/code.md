@@ -29,9 +29,7 @@ Develop a Python program to calculate household electricity bills for several mo
 ## 5. Flowchart
 ```mermaid
 
-## 5. Flowchart
 
-```mermaid
 flowchart TD
     A([Start]) --> B[/Input number of months/]
     B --> C[/Input monthly consumption/]
@@ -67,7 +65,7 @@ flowchart TD
 
     S --> U([End])
     T --> U
-```
+
 
 ```
 
