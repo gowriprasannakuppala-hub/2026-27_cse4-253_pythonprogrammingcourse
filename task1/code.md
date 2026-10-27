@@ -36,8 +36,7 @@ These are sample rules for the project; actual university scholarship rules may 
 10. Stop the program.
 
 ## 3. Flowchart
-mermaid
-```
+```mermaid
 
 flowchart TD
     A([Start]) --> B[/Input number of applicants/]
