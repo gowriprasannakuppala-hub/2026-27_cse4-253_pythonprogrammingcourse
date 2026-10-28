@@ -27,25 +27,16 @@ These are sample rules for this assignment, not actual statutory payroll or tax 
 ```mermaid
 
 flowchart TD
-    A([Start]) --> B[/Input data usage, call minutes, budget and minimum validity/]
-    B --> C[/Input number of mobile plans/]
-    C --> D[/Input plan price, included data, calls, validity and extra charges/]
-    D --> E[Calculate excess data and excess calls]
-    E --> F[Calculate extra data and call charges]
-    F --> G[Calculate total plan cost]
-    G --> H{Cost within budget and validity sufficient?}
-    H -- Yes --> I[Store eligible plan]
-    H -- No --> J[Mark plan as not eligible]
-    I --> K{More plans to evaluate?}
-    J --> K
-    K -- Yes --> D
-    K -- No --> L{Any eligible plans?}
-    L -- Yes --> M[Select eligible plan with lowest total cost]
-    L -- No --> N[Display no eligible plan found]
-    M --> O[/Display plan comparison and best plan/]
-    N --> P([Stop])
-    O --> P
-
+    A([Start]) --> B[/Input employee name and basic pay/]
+    B --> C[/Input overtime hours, overtime rate and incentives/]
+    C --> D[Calculate HRA = basic pay * 20%]
+    D --> E[Calculate DA = basic pay * 10%]
+    E --> F[Calculate overtime pay = hours * rate]
+    F --> G[Calculate gross salary]
+    G --> H[Calculate progressive deductions]
+    H --> I[Calculate net salary = gross salary - deductions]
+    I --> J[/Display formatted salary statement/]
+    J --> K([Stop])
 
 
 
