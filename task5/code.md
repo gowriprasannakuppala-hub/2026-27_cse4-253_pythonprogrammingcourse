@@ -29,12 +29,27 @@ A plan is eligible only if its validity meets the user's requirement and its tot
 ## 3. Flowchart
 ```mermaid
 
+
 flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    A([Start]) --> B[/Input data usage, call minutes, budget and minimum validity/]
+    B --> C[/Input number of mobile plans/]
+    C --> D[/Input plan price, included data, calls, validity and extra charges/]
+    D --> E[Calculate excess data and excess calls]
+    E --> F[Calculate extra data and call charges]
+    F --> G[Calculate total plan cost]
+    G --> H{Cost within budget and validity sufficient?}
+    H -- Yes --> I[Store eligible plan]
+    H -- No --> J[Mark plan as not eligible]
+    I --> K{More plans to evaluate?}
+    J --> K
+    K -- Yes --> D
+    K -- No --> L{Any eligible plans?}
+    L -- Yes --> M[Select eligible plan with lowest total cost]
+    L -- No --> N[Display no eligible plan found]
+    M --> O[/Display plan comparison and best plan/]
+    N --> P([Stop])
+    O --> P
+
   ```
 ## 5. Sample Input
 Enter required data usage (GB): 5
