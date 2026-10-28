@@ -1,4 +1,4 @@
-1. Problem Statement
+## 1. Problem Statement
 Develop a Python program to calculate an employee’s salary based on basic pay, allowances, overtime pay, and incentives. The system should calculate the gross salary, apply progressive deductions based on salary slabs, and generate a formatted salary statement showing gross salary, deductions, and net salary.
 
 Assumed payroll rules for this project:
@@ -12,7 +12,7 @@ Assumed payroll rules for this project:
   - Next ₹20,000: 10%.
   - Amount above ₹40,000: 15%.
 These are sample rules for this assignment, not actual statutory payroll or tax rules.
-2. Algorithm
+## 2. Algorithm
 1. Start the program.
 2. Enter the employee’s name and basic salary.
 3. Calculate HRA and DA using the given percentages.
@@ -23,7 +23,7 @@ These are sample rules for this assignment, not actual statutory payroll or tax 
 8. Calculate net salary by subtracting deductions from gross salary.
 9. Display the formatted salary statement.
 10. Stop the program.
-3. Flowchart
+## 3. Flowchart
 ```mermaid
 flowchart TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -41,7 +41,7 @@ flowchart TD
 
 
 
-5. Sample Input
+## 5. Sample Input
 Use the following values when you run the program.
 Enter employee name: Ravi
 Enter basic pay: 30000
@@ -50,7 +50,7 @@ Enter overtime rate per hour: 200
 Enter incentives: 3000
 
 
-6. Sample Output
+## 6. Sample Output
 ===== EMPLOYEE PAYROLL SYSTEM =====
 
 ========== SALARY STATEMENT ==========
