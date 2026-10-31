@@ -1,4 +1,4 @@
-# 18. Fuel Consumption and Route Comparison – Python Program
+## Fuel Consumption and Route Comparison – Python Program
 
 ## 1. Problem Statement
 
